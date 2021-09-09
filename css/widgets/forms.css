@@ -1,0 +1,113 @@
+::-webkit-input-placeholder {
+}
+
+::-moz-placeholder {
+}
+
+:-ms-input-placeholder {
+}
+
+:-moz-placeholder {
+}
+[data-icon-label]:after{
+    background-color: var(--mint);
+    opacity: 1;
+}
+.form-control{
+    transition: .3s all ease-in-out;
+}
+textarea {
+    font-family: 'Manrope', sans-serif;
+}
+
+textarea.form-control {
+    padding: 15px 20px;
+    border-radius: 25px;
+    height: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    color: #777777;
+    font-weight: normal;
+    font-size: 18px;
+    background: #1B1C1E;
+    border: 1px solid #43464D;
+}
+
+input.form-control
+{
+
+    background: #1B1C1E;
+    border: 1px solid #43464D;
+
+
+    border-radius: 25px;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 20px;
+    font-family: 'Manrope', sans-serif;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 18px;
+}
+input.form-control:focus,
+textarea.form-control:focus{
+    background: #101112;
+    border: 1px solid #6D707C;
+    color: #ffffff;
+}
+input.form-control.error {
+    border-color: #dd0000;
+}
+
+input.form-control::-webkit-input-placeholder {
+    color: #777777;
+    font-weight: normal;
+}
+
+input.form-control::-moz-placeholder {
+    color: #777777;
+    font-weight: normal;
+}
+
+input.form-control:-ms-input-placeholder {
+    color: #777777;
+    font-weight: normal;
+}
+
+input.form-control:-moz-placeholder {
+    color: #777777;
+    font-weight: normal;
+}
+
+footer .wpcf7 form.invalid .wpcf7-response-output,
+footer .wpcf7 form.unaccepted .wpcf7-response-output,
+footer .wpcf7 form.sent .wpcf7-response-output{
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    color: var(--red);
+}
+footer .wpcf7 form.sent .wpcf7-response-output{
+    color: var(--green);
+    font-size: 16px;
+}
+form .col{
+    padding-bottom: 0;
+}
+form .container{
+    padding: 0;
+}
+.wpcf7 .wpcf7-not-valid-tip{
+    text-align: left;
+    color: var(--red);
+    font-size: 12px;
+    margin-top: -15px;
+    padding: 2px 4px;
+    background: rgba(255,255,255,.85);
+}
+.wpcf7 .wpcf7-not-valid-tip:after{
+    border-width: 5px;
+    margin-left: -10px;
+    border-bottom-color: rgba(255,255,255,.85);
+}

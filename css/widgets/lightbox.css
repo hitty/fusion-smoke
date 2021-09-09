@@ -1,0 +1,6 @@
+.lightbox-content h1,
+.lightbox-content h2,
+.lightbox-content h3,
+.lightbox-content h4{
+    color: var(--black);
+}

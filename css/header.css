@@ -1,0 +1,99 @@
+.header, .header-wrapper{
+    background: #0B0C0E;
+}
+.header-wrapper{
+    background: #0B0C0E;
+    padding: 0;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    opacity: 1;
+}
+
+.header-main{
+    height: 64px!important;
+    background: #0B0C0E;
+}
+#menu-navbar {
+    display: flex;
+}
+
+#menu-navbar li {
+    margin-right: 48px;
+}
+
+header .nav-left.nav>li>a,
+#main-menu .nav-sidebar.nav>li>a{
+    color: white;
+    border-bottom: 2px solid #0B0C0E;
+    transition: .3s all ease-in-out;
+    padding: 0;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.025em;
+    line-height: 24px;
+}
+
+header .nav-left.nav>li>a:hover,
+#menu-navbar .current_page_item a,
+header .nav-left.nav>li>a:hover, header .nav-left.nav>li.active>a, header .nav-left.nav>li.current>a, header .nav-left.nav>li>a.active, header .nav-left.nav>li>a.current, .nav-dropdown li.active>a, .nav-column li.active>a, .nav-dropdown>li>a:hover, .nav-column li>a:hover,
+#main-menu .nav-sidebar.nav>.current_page_item>a{
+    color: #888888;
+    border-color: #59D7CF;
+}
+.account-link.account-login,
+.account-item >a {
+    background-image: url("data:image/svg+xml,%3Csvg width='19' height='19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.285 10.758c-.88.811-1.992 1.296-3.2 1.296-1.209 0-2.32-.485-3.2-1.296l-.018.005c-1.777.466-2.921 1.302-3.553 2.339a3.26 3.26 0 00-.425 1.048 1.976 1.976 0 00-.016.094 10.264 10.264 0 007.212 2.945c2.738 0 5.303-1.072 7.214-2.947a1.953 1.953 0 00-.017-.099 3.218 3.218 0 00-.426-1.046c-.634-1.033-1.781-1.868-3.554-2.334a1.099 1.099 0 01-.017-.005zm1.164-1.505c3.618 1.286 5.599 4.71 4.341 6.015a12.048 12.048 0 01-8.705 3.703c-3.332 0-6.45-1.356-8.712-3.71-1.243-1.293.73-4.722 4.348-6.008a6.338 6.338 0 01-.227-.46c-.367-.828-.575-2.573-.575-3.57C3.92 1.895 6.232 0 9.085 0s5.165 1.895 5.165 5.223c0 1.014-.214 2.773-.593 3.612a6.34 6.34 0 01-.208.418zm-1.416-1.152c.218-.482.436-1.928.436-2.878 0-2.17-1.335-3.441-3.384-3.441-2.05 0-3.384 1.27-3.384 3.441 0 .938.211 2.373.422 2.848.608 1.371 1.753 2.2 2.962 2.2 1.2 0 2.336-.815 2.948-2.17z' fill='%23fff'/%3E%3C/svg%3E");
+    width: 19px;
+    height: 20px;
+    display: block;
+    transform: translateY(2px);
+    background-size: 20px auto;
+}
+.account-link.account-login:hover,
+.account-item >a:hover{
+    background-image: url("data:image/svg+xml,%3Csvg width='19' height='19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.285 10.758c-.88.811-1.992 1.296-3.2 1.296-1.209 0-2.32-.485-3.2-1.296l-.018.005c-1.777.466-2.921 1.302-3.553 2.339a3.26 3.26 0 00-.425 1.048 1.976 1.976 0 00-.016.094 10.264 10.264 0 007.212 2.945c2.738 0 5.303-1.072 7.214-2.947a1.953 1.953 0 00-.017-.099 3.218 3.218 0 00-.426-1.046c-.634-1.033-1.781-1.868-3.554-2.334a1.099 1.099 0 01-.017-.005zm1.164-1.505c3.618 1.286 5.599 4.71 4.341 6.015a12.048 12.048 0 01-8.705 3.703c-3.332 0-6.45-1.356-8.712-3.71-1.243-1.293.73-4.722 4.348-6.008a6.338 6.338 0 01-.227-.46c-.367-.828-.575-2.573-.575-3.57C3.92 1.895 6.232 0 9.085 0s5.165 1.895 5.165 5.223c0 1.014-.214 2.773-.593 3.612a6.34 6.34 0 01-.208.418zm-1.416-1.152c.218-.482.436-1.928.436-2.878 0-2.17-1.335-3.441-3.384-3.441-2.05 0-3.384 1.27-3.384 3.441 0 .938.211 2.373.422 2.848.608 1.371 1.753 2.2 2.962 2.2 1.2 0 2.336-.815 2.948-2.17z' fill='%2359D7CF'/%3E%3C/svg%3E");
+}
+#menu-navbar li:last-of-type {
+    margin-right: 0;
+}
+.nav-line-bottom>li>a:before, .nav-line-grow>li>a:before, .nav-line>li>a:before{
+    display: none;
+}
+header .nav-left.nav>li{
+    margin-right: 48px;
+}
+header .nav-left.nav>li:last-of-type{
+    margin-right: 0;
+}
+.social-icons a:hover{
+    color: #59D7CF;
+}
+.header a.icon:not(.button){
+    margin-left: 0;
+    margin-right: 36px;
+}
+.header-nav.header-nav-main.nav{
+    justify-content: center;
+}
+@media(max-width:992px){
+    #main-menu{
+        padding: 52px;
+    }
+    #main-menu .nav-sidebar.nav>li{
+        border: none;
+    }
+    #main-menu .nav-sidebar.nav>li>a{
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--white);
+        letter-spacing: 0.025em;
+        margin: 26px 0;
+        display: inline-block;
+        width: auto!important;
+    }
+    #main-menu .header-social-icons{
+        padding: 0;
+    }
+}

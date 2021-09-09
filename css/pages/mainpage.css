@@ -1,0 +1,108 @@
+.mainpage-logo {
+    display: block;
+    width: 320px;
+    margin: 100px auto;
+}
+
+.mainpage-chapters{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.chapter-item {
+    position: relative;
+    height: 346px;
+    padding: 48px 58px;
+    width: calc( 50% - 40px );
+    margin: 20px;
+}
+
+.chapter-images-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.chapter-image {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    transition: .3s all ease-in-out;
+}
+
+.chapter-item:hover .chapter-image {
+    filter: grayscale(0);
+}
+
+.chapter-image.is-active {
+    opacity: 1;
+}
+
+.chapter-title {
+    color: #ffffff;
+    font-size: 52px;
+    font-weight: 800;
+}
+
+.chapter-text {
+    font-size: 18px;
+    color: #ffffff;
+    position: relative;
+}
+
+.chapter-btn {
+    position: absolute;
+    bottom: 48px;
+    left: 58px;
+}
+
+@media(max-width:992px){
+    .mainpage-logo{
+        width: 220px;
+        margin: 40px auto;
+    }
+    .mainpage-chapters{
+        margin: 0;
+    }
+    .chapter-item {
+        height: 200px;
+        padding: 16px 24px;
+        width: 100%;
+        margin: 0 0 24px 0;
+    }
+
+    .chapter-title {
+        font-size: 44px;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+
+    .chapter-text {
+        font-size: 16px;
+    }
+
+    .chapter-btn {
+        font-size: 18px;
+        width: auto;
+        left: 24px;
+        bottom: 16px;
+        height: 52px;
+        line-height: 52px;
+        padding: 0 24px
+    }
+
+    .chapter-image {
+        filter: grayscale(0);
+    }
+}

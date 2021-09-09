@@ -1,0 +1,60 @@
+
+.btn,
+input[type=submit], input[type=submit].button, input[type=submit], .primary, .primary.add_to_cart_button {
+    color: #FFFFFF;
+    border-radius: 30px;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 55px;
+    border: 2px solid #FFFFFF;
+    font-weight: 800;
+    font-size: 18px;
+    white-space: nowrap;
+    transition: .3s all ease-in-out;
+    background: transparent;
+}
+
+.btn:hover {
+    border-color: #59D7CF;
+    color: #59D7CF;
+}
+
+.btn-big {
+    height: 70px;
+    line-height: 70px;
+    border-radius: 35px;
+}
+
+.btn-black {
+    background: #0B0C0E;
+    border: none;
+}
+
+.btn-black:hover {
+    background: #59D7CF;
+    color: #FFFFFF;
+}
+.btn.add_to_cart_button{
+    background: var(--mint);
+    color: var(--black);
+    height: 45px;
+    line-height: 43px;
+    font-size: 16px;
+    border-color: var(--mint);
+}
+@media (max-width: 992px) {
+    .btn {
+        width: 100%;
+    }
+}
+.product .add_to_cart_button{
+    background: var(--mint);
+    color: var(--black);
+    border-color: var(--mint);
+    font-size: 16px;
+    line-height: 43px;
+    margin-top: 0;
+    max-width: 136px;
+    padding: 0;
+    width: 136px;
+}

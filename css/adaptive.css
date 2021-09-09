@@ -1,0 +1,39 @@
+
+@media only screen and (max-width: 767px) {
+    .carousel-title {
+        font-size: 38px;
+        margin-top: 24px;
+    }
+
+    .carousel-subtitle {
+        font-size: 17px;
+    }
+
+    .carousel-actions {
+        margin-top: 32px;
+        display: flex;
+    }
+
+    .carousel-actions-btn {
+        padding-left: 0;
+        padding-right: 0;
+        width: 48%;
+    }
+
+    .carousel-image {
+        margin: 32px auto 0 auto;
+        display: block;
+        width: 100%;
+        transform: translateX(0);
+        max-width: 360px;
+    }
+    .box-image img{
+        height: 140px;
+    }
+    section{
+        margin: 40px 0;
+    }
+    .section-title-container{
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,58 @@
+.widget_product_categories > ul {
+}
+
+.widget_product_categories > ul > li {
+    border: none !important;
+}
+
+.widget_product_categories > ul > li a {
+    font-weight: 800;
+    font-size: 18px;
+    transition: .3s all ease-in-out;
+}
+
+.widget_product_categories > ul > li a:hover,
+.widget_product_categories ul li.active:not([aria-expanded="true"]) > a {
+    color: var(--mint);
+}
+
+.widget_product_categories > ul > li button {
+}
+
+.widget_product_categories > ul > li i {
+}
+
+.widget_product_categories > ul > li.has-child {
+}
+
+.widget_product_categories > ul > li.has-child a {
+}
+
+.widget_product_categories > ul > li.has-child button {
+}
+
+.widget_product_categories > ul > li.has-child i {
+}
+
+.widget_product_categories > ul > li.active {
+}
+
+.widget_product_categories > ul > li.active a {
+}
+
+.widget_product_categories > ul > li.active button {
+}
+
+.widget_product_categories > ul > li.active i {
+}
+.widget_product_categories > ul > li .children{
+    border: none;
+}
+.widget_product_categories > ul > li .children li a{
+    font-weight: 500;
+    font-size: 18px;
+}
+.widget_product_categories > ul > li .children li button,
+.widget_product_categories > ul > li .children li .children {
+    display: none!important;
+}
