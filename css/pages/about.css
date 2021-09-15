@@ -1,0 +1,11 @@
+.about-social {
+    color: var(--black);
+}
+.about-social>span{
+    display: block;
+    width: 100%;
+    margin: 36px 0 12px 0;
+}
+.about-social a.icon:not(.button){
+    margin: 0 18px 0 0;
+}

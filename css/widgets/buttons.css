@@ -1,10 +1,10 @@
 
-.btn,
+.btn,.btn-outline,.btn-filled,
 input[type=submit], input[type=submit].button, input[type=submit], .primary, .primary.add_to_cart_button {
     color: #FFFFFF;
     border-radius: 30px;
     height: 48px;
-    line-height: 48px;
+    line-height: 45px;
     padding: 0 55px;
     border: 2px solid #FFFFFF;
     font-weight: 800;
@@ -42,19 +42,59 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
     font-size: 16px;
     border-color: var(--mint);
 }
-@media (max-width: 992px) {
-    .btn {
-        width: 100%;
-    }
+.btn-outline{
+    color: var(--black);
+    border: 2px solid var(--mint);
+    background: transparent;
+    line-height: 46px;
 }
+
+.btn-outline:hover {
+    color: var(--black);
+    border: 2px solid var(--mint);
+    background: var(--mint);
+}
+.cart .single_add_to_cart_button,
 .product .add_to_cart_button{
     background: var(--mint);
     color: var(--black);
-    border-color: var(--mint);
-    font-size: 16px;
+    border: 2px solid var(--mint);
+    font-size: 16px!important;
     line-height: 43px;
     margin-top: 0;
     max-width: 136px;
     padding: 0;
     width: 136px;
+}
+
+.btn-filled{
+    color: var(--black);
+    border: 2px solid var(--mint);
+    background: var(--mint)!important;
+    line-height: 46px;
+}
+.cart .single_add_to_cart_button:hover,
+.btn-filled:hover,
+.product .add_to_cart_button:hover{
+    color: var(--black);
+    border: 2px solid var(--mint);
+    background: transparent!important;
+}
+@media (max-width: 992px) {
+    .btn {
+        width: 100%;
+    }
+}
+
+.is-form, button.is-form, input[type=submit].is-form, input[type=reset].is-form, input[type=button].is-form,
+.form-flat input:not([type=submit]), .form-flat textarea, .form-flat select{
+    border-color: var(--mint);
+    background: transparent;
+    height: 48px;
+}
+.product-summary .quantity, .quantity{
+    margin: 0;
+}
+.product-summary .quantity + .button{
+    margin: 0 0 0 16px;
 }

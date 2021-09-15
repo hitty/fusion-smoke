@@ -1,5 +1,7 @@
 .header, .header-wrapper{
     background: #0B0C0E;
+    position: sticky;
+    top: 0;
 }
 .header-wrapper{
     background: #0B0C0E;
@@ -96,4 +98,7 @@ header .nav-left.nav>li:last-of-type{
     #main-menu .header-social-icons{
         padding: 0;
     }
+}
+.header-inner {
+    position: relative;
 }

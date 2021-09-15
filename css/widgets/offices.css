@@ -1,0 +1,27 @@
+.offices{
+    margin-bottom: 0;
+    background: #0B0C0E!important;
+    padding: 60px 0!important;
+}
+.offices .section-title b{
+    display: none;
+}
+.offices .section-title .section-title-main{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.offices-item{
+    text-align: center;
+}
+.offices-item>div{
+    margin: 0 auto!important;
+}
+.offices-title{
+    font-weight: 700;
+    font-size: 18px;
+}
+.offices-subtitle{
+    font-weight: 500;
+    opacity: .5;
+}

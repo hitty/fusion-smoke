@@ -1,4 +1,9 @@
 footer {
+    padding: 40px 0 30px 0;
+    background: #0B0C0E;
+}
+
+.footer-mainpage {
     padding: 100px 0 240px 0;
     background: url(../images/footer-bg.png) no-repeat center bottom #0B0C0E;
     text-align: center;
@@ -40,15 +45,21 @@ footer .modal-form-success {
     content: "Social media:";
     color: #ffffff;
     position: absolute;
+    transform: translate(-10px,-36px);
+}
+
+.footer-mainpage .footer-social:before {
     transform: translateY(-36px)
 }
 
 .footer-social-item {
-    margin: 0 22px
+    margin: 0 44px 0 0;
 }
-
+.footer-social-item:last-of-type{
+    margin: 0;
+}
 @media (max-width: 992px) {
-    footer {
+    .footer-mainpage {
         padding: 50px 0 220px 0;
     }
 
@@ -58,5 +69,12 @@ footer .modal-form-success {
 
     .footer-social {
         margin-top: 90px;
+    }
+    .footer-contacts a,
+    .footer-copyright{
+        text-align: center;
+    }
+    .footer-contacts {
+        margin-bottom: 32px;
     }
 }
