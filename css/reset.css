@@ -145,13 +145,14 @@ section {
 .icon:hover path {
     fill: #59D7CF;
 }
+.icon-user{
+    display: none!important;
+}
 @media (max-width: 992px) {
     .mobile-slider {
         flex-wrap: nowrap;
         flex-direction: row;
         overflow-x: auto;
     }
-    .icon-user{
-        display: none!important;
-    }
+
 }

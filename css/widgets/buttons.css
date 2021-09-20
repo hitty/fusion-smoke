@@ -66,7 +66,11 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
     padding: 0;
     width: 136px;
 }
-
+.cart .single_add_to_cart_button.loading, .product .add_to_cart_button.loading{
+    opacity: .8!important;
+    pointer-events: none;
+    cursor: not-allowed;
+}
 .btn-filled{
     color: var(--black);
     border: 2px solid var(--mint);
@@ -91,6 +95,8 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
     border-color: var(--mint);
     background: transparent;
     height: 48px;
+    border-width: 2px;
+    color: var(--mint);
 }
 .product-summary .quantity, .quantity{
     margin: 0;

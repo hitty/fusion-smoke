@@ -6,6 +6,7 @@ add_action( 'wp_enqueue_scripts', function () {
 
     wp_enqueue_style( 'child-buttons-style',    get_stylesheet_directory_uri() . '/css/widgets/buttons.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-cart-style',       get_stylesheet_directory_uri() . '/css/widgets/cart.css',      ['flatsome-main'] , '1.0', 'all' );
+    wp_enqueue_style( 'child-controls-style',   get_stylesheet_directory_uri() . '/css/widgets/controls.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-mini-cart-style',  get_stylesheet_directory_uri() . '/css/widgets/mini-cart.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-forms-style',      get_stylesheet_directory_uri() . '/css/widgets/forms.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-lightbox-style',   get_stylesheet_directory_uri() . '/css/widgets/lightbox.css',      ['flatsome-main'] , '1.0', 'all' );
@@ -23,7 +24,8 @@ add_action( 'wp_enqueue_scripts', function () {
 
     wp_enqueue_style( 'child-adaptive-style',   get_stylesheet_directory_uri() . '/css/adaptive.css',   ['flatsome-main'] , '1.0', 'all' );
 
-    wp_enqueue_script( 'child-script',   get_stylesheet_directory_uri() . '/js/script.js',   ['flatsome-theme-woocommerce-js'] , '1.0', 'all' );
+    wp_enqueue_script( 'child-script',          get_stylesheet_directory_uri() . '/js/script.js',   ['flatsome-theme-woocommerce-js'] , '1.0', 'all' );
+    wp_enqueue_script( 'child-product-card-script',get_stylesheet_directory_uri() . '/js/product-card.js',   ['flatsome-theme-woocommerce-js'] , '1.0', 'all' );
 });
 
 /*********
@@ -45,8 +47,15 @@ add_filter( 'woocommerce_product_tabs', function ( $tabs ) {
  **/
 add_action( 'woocommerce_single_product_summary', function () {
     global $product;
-    the_excerpt( );
     wc_display_product_attributes( $product );
+    if( strlen( $product->description ) > 20 ) echo '<div class="product-description"><p class="product-description-title">Description</p> ' . $product->description . '</div>';
+}, 135 );
+
+add_action( 'woocommerce_before_single_product', function () {
+    ?>
+    <h1 class="product-title product_title entry-title">
+        <?php the_title(); ?>
+    </h1> <?php
 }, 135 );
 
 
@@ -116,11 +125,7 @@ function added_to_cart_js_event(){
         (function($){
             $(document.body).on('added_to_cart', function( event, fragments, cart_hash, button ) {
                 button.attr('data-total', parseInt( button.data('total') ) + 1 );
-                jQuery('<div id="cart-added-notification">Added to cart</div>').insertBefore('.cart-item');
-                setTimeout(function(){
-                    jQuery('#cart-added-notification').fadeOut(300, function() { $(this).remove(); });
-                }, 1500);
-
+                addedToCartNotification();
             });
         })(jQuery);
     </script>
