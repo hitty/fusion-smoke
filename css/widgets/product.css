@@ -45,22 +45,24 @@
 }
 
 .product .price.product-page-price .woocommerce-Price-amount,
-.product .woocommerce-variation-price .price .amount{
-    font-size: 24px;
-    color: var(--black);
+.product .woocommerce-variation-price .price .amount {
+    font-size: 30px;
+    color: var(--mint);
     display: inline-block;
-
 }
-.product .woocommerce-variation-price .price .amount{
+
+.product .woocommerce-variation-price .price .amount {
     font-size: 28px;
 }
-.product .woocommerce-variation-price{
+
+.product .woocommerce-variation-price {
     display: block;
-    padding: 0 0 16px 0;
+    padding: 0;
     border: 0;
     border-left: 0;
     border-right: 0;
 }
+
 .yith-wcbr-brands, .product_meta > span {
     margin-top: 0;
     border: none !important;
@@ -169,29 +171,33 @@
     display: none;
 }
 
- .product .product-main .badge-container {
-    position: relative!important;
+.product .product-main .badge-container {
+    position: relative !important;
     top: -16px;
     left: -16px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
 }
-.product .product-main .badge-inner.new-bubble{
+
+.product .product-main .badge-inner.new-bubble {
     position: relative;
     right: auto;
     left: 0;
 }
-.product .product-main .badge-inner.new-bubble-auto{
+
+.product .product-main .badge-inner.new-bubble-auto {
     position: relative;
     right: auto;
 }
-.product .product-main .badge{
+
+.product .product-main .badge {
     margin: 0px 0 0 16px;
     display: block;
     width: auto;
     height: auto;
 }
+
 .product .badge-inner.new-bubble, .product .badge-inner.new-bubble-auto {
     background: #FFD748;
     border-radius: 32px;
@@ -393,3 +399,251 @@
 .product-title.product_title {
     margin: 16px 0 0 0;
 }
+
+.social-icons.share-icons.share-row {
+    padding: 16px 0 0 0;
+}
+
+.social-icons.share-icons.share-row:before {
+    content: "Share:";
+    display: inline-block;
+    color: var(--black);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-icons.share-icons.share-row a {
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .product-small.box {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .product-small.box:hover {
+    }
+
+    .badge-container {
+    }
+
+    .badge {
+    }
+
+    .badge-inner {
+    }
+
+    .badge-circle-inside .badge-inner, .badge-circle .badge-inner {
+    }
+
+    .product-small + .yith-wcbr-brands {
+    }
+
+    .product .price.product-page-price .woocommerce-Price-amount,
+    .product .woocommerce-variation-price .price .amount {
+    }
+
+    .product .woocommerce-variation-price .price .amount {
+    }
+
+    .product .woocommerce-variation-price {
+    }
+
+    .yith-wcbr-brands, .product_meta > span {
+    }
+
+    .product_meta {
+    }
+
+    .woocommerce-product-attributes,
+    .woocommerce-product-attributes>tbody {
+    display: block;
+    }
+
+    .product_meta .sku_wrapper, .product_meta .posted_in, .woocommerce-product-attributes-item {
+    padding: 8px 0;
+    font-size: 16px;
+    }
+
+    .product_meta .sku_wrapper span, .product_meta .posted_in a {
+    width: 100%;
+    display: block;
+    }
+
+    .woocommerce-product-attributes-item td, .woocommerce-product-attributes-item td p, .woocommerce-product-attributes-item th, .product-description-title {
+    width: 100%;
+    display: block;
+    }
+
+    .product-description-title {
+    }
+
+    .product-summary table tr {
+    display: block;
+    }
+
+    .woocommerce-product-attributes-item th {
+    width: 100%;
+    }
+    .woocommerce-product-attributes-item td{
+        margin-top: 8px;
+    }
+
+    .woocommerce-product-attributes-item td, .woocommerce-product-attributes-item .woocommerce-product-attributes-item__value p {
+    }
+
+    .product-lightbox-inner h1 {
+    }
+
+    .product .product-title.woocommerce-loop-product__title {
+    }
+
+    .product .price .amount {
+    }
+
+    .product .price-wrapper {
+    }
+
+    .product.out-of-stock.type-product {
+    }
+
+    .product.out-of-stock.type-product .attachment-woocommerce_thumbnail {
+    }
+
+    .product.out-of-stock.type-product .primary.button {
+    }
+
+    .product.out-of-stock.type-product .primary.button:before {
+    }
+
+    .product.out-of-stock.type-product .out-of-stock-label {
+    }
+
+    .product .product-main .badge-container {
+    }
+
+    .product .product-main .badge-inner.new-bubble {
+    }
+
+    .product .product-main .badge-inner.new-bubble-auto {
+    }
+
+    .product .product-main .badge {
+    }
+
+    .product .badge-inner.new-bubble, .product .badge-inner.new-bubble-auto {
+
+    }
+
+    .product .badge-inner.new-bubble-auto {
+    }
+
+    .product .badge-inner.new-bubble {
+    }
+
+    .product .badge-inner.new-bubble:before {
+    }
+
+    .product .add_to_cart_button.added {
+    }
+
+    .add_to_cart_button.added + a {
+    }
+
+    .subcategories-list {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .subcategories-list > li {
+    }
+
+    .subcategories-list > li > a {
+    }
+
+    .subcategories-list > li > a:hover, .subcategories-list > li > a.is-active {
+    }
+
+    .container .woocommerce-notices-wrapper > div, #cart-added-notification {top: 10px;right: 10px;}
+
+    .woocommerce-notices-wrapper .woocommerce-message {
+    }
+
+    .woocommerce-notices-wrapper .woocommerce-message .message-container i {
+    }
+
+    .woocommerce-notices-wrapper .woocommerce-message .message-container {
+    }
+
+    .product-main .image-tools {
+    }
+
+    .product-main .zoom-button.button {
+    }
+
+    .product-footer {
+    }
+
+    .product-section {
+    }
+
+    .product-section-title {
+    }
+
+    .product-description {
+    font-size: 16px;
+    }
+
+    .button.icon.circle > i:only-child {
+    }
+
+    .button.icon.circle > .icon-angle-right:after, .button.icon.circle > .icon-angle-left:after {
+
+    }
+
+    .button.icon.circle > .icon-angle-left:after {
+    }
+
+    .next-prev-thumbs li .button {
+    }
+
+    .next-prev-thumbs li .button:hover {
+    }
+
+    .quantity input[type=number] {
+    }
+
+    .quantity .button.minus, .quantity .button.plus {
+    }
+
+    .product-thumbnails a {
+    }
+
+    .product-title.product_title {
+    }
+
+    .social-icons.share-icons.share-row {
+    }
+
+    .social-icons.share-icons.share-row:before {
+    display: block;
+    }
+
+    .social-icons.share-icons.share-row a {
+    }
+    .variations,
+    .variations tbody,
+    .variations tr,
+    .variations td{
+        display: block;
+        width: 100%;
+    }
+    .variations td{
+        padding: 0;
+    }
+    .variations .value{
+        margin-top: -8px
+    }

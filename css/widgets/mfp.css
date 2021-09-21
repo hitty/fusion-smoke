@@ -1,0 +1,11 @@
+.off-canvas-right .mfp-content, .off-canvas-left .mfp-content{
+
+}
+@media(max-width: 991px){
+    .off-canvas-right .mfp-content, .off-canvas-left .mfp-content{
+        width: 100%;
+    }
+    #shop-sidebar{
+        padding-top: 60px;
+    }
+}

@@ -93,7 +93,7 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
 .is-form, button.is-form, input[type=submit].is-form, input[type=reset].is-form, input[type=button].is-form,
 .form-flat input:not([type=submit]), .form-flat textarea, .form-flat select{
     border-color: var(--mint);
-    background: transparent;
+    background-color: transparent;
     height: 48px;
     border-width: 2px;
     color: var(--mint);
@@ -119,6 +119,8 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
     border: 2px solid #E8F1F8;
     color: var(--black)!important;
     opacity: 1;
+    /* -webkit-appearance: auto; */
+    -moz-appearance: initial;
 }
 .form-flat select[data-show_option_none="yes"] option{
     color: var(--black);

@@ -27,8 +27,16 @@
         transform: translateX(0);
         max-width: 360px;
     }
-    .box-image img{
-        height: 140px;
+   .has-equal-box-heights .box-image img{
+        max-width: 160px;
+        object-fit: contain;
+        height: auto;
+        position: relative;
+        margin: 0 auto;
+        display: block;
+    }
+    .has-equal-box-heights .box-image{
+        padding: 0!important;
     }
     section{
         margin: 40px 0;
