@@ -104,3 +104,22 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
 .product-summary .quantity + .button{
     margin: 0 0 0 16px;
 }
+.button.disabled, button.disabled, .button[disabled], button[disabled],
+.woocommerce-variation-add-to-cart-disabled .button,
+.woocommerce-variation-add-to-cart-disabled input{
+    pointer-events: none;
+    opacity: .6;
+}
+.product_type_variable{
+    width: 100%;
+    max-width: 100%;
+    min-width: 170px;
+}
+.form-flat select[data-show_option_none="yes"]{
+    border: 2px solid #E8F1F8;
+    color: var(--black)!important;
+    opacity: 1;
+}
+.form-flat select[data-show_option_none="yes"] option{
+    color: var(--black);
+}

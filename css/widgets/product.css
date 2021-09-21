@@ -44,11 +44,23 @@
     display: none;
 }
 
-.product .price.product-page-price .woocommerce-Price-amount {
+.product .price.product-page-price .woocommerce-Price-amount,
+.product .woocommerce-variation-price .price .amount{
     font-size: 24px;
     color: var(--black);
-}
+    display: inline-block;
 
+}
+.product .woocommerce-variation-price .price .amount{
+    font-size: 28px;
+}
+.product .woocommerce-variation-price{
+    display: block;
+    padding: 0 0 16px 0;
+    border: 0;
+    border-left: 0;
+    border-right: 0;
+}
 .yith-wcbr-brands, .product_meta > span {
     margin-top: 0;
     border: none !important;
@@ -96,11 +108,11 @@
 }
 
 .woocommerce-product-attributes-item th {
-    width: 40%;
+    width: 50%;
 }
 
 .woocommerce-product-attributes-item td, .woocommerce-product-attributes-item .woocommerce-product-attributes-item__value p {
-    padding-left: 16px;
+    padding-left: 0;
     color: var(--black);
     font-weight: 400;
 }
@@ -163,17 +175,22 @@
     left: -16px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 16px;
+    margin-bottom: 0;
 }
 .product .product-main .badge-inner.new-bubble{
     position: relative;
+    right: auto;
+    left: 0;
 }
 .product .product-main .badge-inner.new-bubble-auto{
     position: relative;
     right: auto;
 }
 .product .product-main .badge{
-    margin: 0px 32px 0 0;
+    margin: 0px 0 0 16px;
+    display: block;
+    width: auto;
+    height: auto;
 }
 .product .badge-inner.new-bubble, .product .badge-inner.new-bubble-auto {
     background: #FFD748;
@@ -374,5 +391,5 @@
 }
 
 .product-title.product_title {
-    margin: 0;
+    margin: 16px 0 0 0;
 }

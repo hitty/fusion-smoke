@@ -180,3 +180,5 @@ add_filter( 'woocommerce_loop_add_to_cart_link', function( $html, $product ) {
     }
     return $html;
 }, 10, 2 );
+
+

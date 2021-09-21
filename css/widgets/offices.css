@@ -25,3 +25,7 @@
     font-weight: 500;
     opacity: .5;
 }
+
+.offices .box-image img{
+    width: 130px;
+}
