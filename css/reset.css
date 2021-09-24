@@ -40,7 +40,7 @@ ul, ol {
     margin-left: auto !important;
     margin-right: auto !important;
 }
-.container-width, .full-width .ubermenu-nav, .container, .row{
+.container-width, .full-width .ubermenu-nav, .container, .row, .row.row-large{
     max-width: 1150px;
 }
 h1, h2, h3, h4 {

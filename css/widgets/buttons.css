@@ -1,6 +1,6 @@
 
 .btn,.btn-outline,.btn-filled,
-input[type=submit], input[type=submit].button, input[type=submit], .primary, .primary.add_to_cart_button {
+input[type=submit], input[type=submit].button, input[type=submit], .primary, .primary.add_to_cart_button, .button, .checkout-button {
     color: #FFFFFF;
     border-radius: 30px;
     height: 48px;
@@ -12,6 +12,7 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
     white-space: nowrap;
     transition: .3s all ease-in-out;
     background: transparent;
+    display: inline-block;
 }
 
 .btn:hover {
@@ -42,14 +43,16 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
     font-size: 16px;
     border-color: var(--mint);
 }
-.btn-outline{
+.btn-outline,
+.button.is-outline{
     color: var(--black);
     border: 2px solid var(--mint);
     background: transparent;
     line-height: 46px;
 }
 
-.btn-outline:hover {
+.btn-outline:hover,
+.button.is-outline:hover{
     color: var(--black);
     border: 2px solid var(--mint);
     background: var(--mint);
@@ -71,7 +74,8 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
     pointer-events: none;
     cursor: not-allowed;
 }
-.btn-filled{
+.btn-filled,
+.button.checkout-button{
     color: var(--black);
     border: 2px solid var(--mint);
     background: var(--mint)!important;
@@ -79,7 +83,8 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
 }
 .cart .single_add_to_cart_button:hover,
 .btn-filled:hover,
-.product .add_to_cart_button:hover{
+.product .add_to_cart_button:hover,
+.button.checkout-button:hover{
     color: var(--black);
     border: 2px solid var(--mint);
     background: transparent!important;
