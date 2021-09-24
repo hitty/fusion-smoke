@@ -25,13 +25,13 @@ add_action( 'wp_enqueue_scripts', function () {
 
     wp_enqueue_style( 'child-adaptive-style',   get_stylesheet_directory_uri() . '/css/adaptive.css',   ['flatsome-main'] , '1.0', 'all' );
 
-    wp_enqueue_script( 'child-script',          get_stylesheet_directory_uri() . '/js/script.js',   ['flatsome-theme-woocommerce-js'] , '1.0', 'all' );
-    wp_enqueue_script( 'child-product-card-script',get_stylesheet_directory_uri() . '/js/product-card.js',   ['flatsome-theme-woocommerce-js'] , '1.0', 'all' );
+    wp_enqueue_script( 'child-script',          get_stylesheet_directory_uri() . '/js/script.js',   [] , 'false', 'all' );
+    wp_enqueue_script( 'child-product-card-script',get_stylesheet_directory_uri() . '/js/product-card.js',   [] , 'false', 'all' );
 });
 
-/*********
+/******************
  * Single product page
- *********/
+ ******************/
 
 /**
  *  Remove additional information tab
