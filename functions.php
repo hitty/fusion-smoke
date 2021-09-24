@@ -22,6 +22,7 @@ add_action( 'wp_enqueue_scripts', function () {
 
     wp_enqueue_style( 'child-about-style',      get_stylesheet_directory_uri() . '/css/pages/about.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-mainpage-style',   get_stylesheet_directory_uri() . '/css/pages/mainpage.css',      ['flatsome-main'] , '1.0', 'all' );
+    wp_enqueue_style( 'child-shop-style',   get_stylesheet_directory_uri() . '/css/pages/shop.css',      ['flatsome-main'] , '1.0', 'all' );
 
     wp_enqueue_style( 'child-adaptive-style',   get_stylesheet_directory_uri() . '/css/adaptive.css',   ['flatsome-main'] , '1.0', 'all' );
 

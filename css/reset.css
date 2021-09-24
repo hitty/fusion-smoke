@@ -156,6 +156,17 @@ section {
     }
 
 }
+
 #main{
     min-height: calc( 100vh - 267px );
+}
+@media (max-width: 992px) {
+    #main{
+        min-height: calc( 100vh - 298px );
+    }
+}
+@media (max-width: 768px) {
+    #main{
+        min-height: calc( 100vh - 330px );
+    }
 }

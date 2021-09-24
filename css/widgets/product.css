@@ -130,6 +130,11 @@
     font-weight: 500;
     margin: 0 0 16px 0 !important;
 }
+.product .price-wrapper .price,
+.product .price{
+    display: flex;
+    justify-content: center;
+}
 
 .product .price .amount {
     display: block;
@@ -139,6 +144,7 @@
 
 .product .price-wrapper {
     margin-bottom: 16px;
+    white-space: nowrap;
 }
 
 .product.out-of-stock.type-product {
