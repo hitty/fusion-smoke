@@ -1,14 +1,15 @@
 .mainpage-logo {
     display: block;
     width: 320px;
-    margin: 100px auto;
+    margin: 80px auto;
 }
 
 .mainpage-chapters{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin: -20px;
+    /* margin-right: -20px; */
+    /* margin-top: -20px; */
 }
 .chapter-item {
     position: relative;

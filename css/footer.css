@@ -4,7 +4,7 @@ footer {
 }
 
 .footer-mainpage {
-    padding: 100px 0 240px 0;
+    padding: 40px 0 200px 0;
     background: url(../images/footer-bg.png) no-repeat center bottom #0B0C0E;
     text-align: center;
 }
@@ -16,14 +16,14 @@ footer .modal-form-success {
 }
 
 .footer-title {
-    margin-bottom: 84px;
+    margin-bottom: 40px;
 }
 
 .footer-copyright {
     color: #646870;
     font-weight: 400;
-    font-size: 18px;
-    margin-top: 70px;
+    font-size: 16px;
+    margin-top: 60px;
     margin-bottom: 16px;
 }
 
@@ -31,12 +31,12 @@ footer .modal-form-success {
     display: block;
     color: #ffffff;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .footer-social {
     display: flex;
-    margin-top: 102px;
+    margin-top: 98px;
     justify-content: center;
     position: relative;
 }
@@ -49,7 +49,7 @@ footer .modal-form-success {
 }
 
 .footer-mainpage .footer-social:before {
-    transform: translateY(-36px)
+    transform: translateY(-52px);
 }
 
 .footer-social-item {

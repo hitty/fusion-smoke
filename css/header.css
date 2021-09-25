@@ -6,7 +6,7 @@
 .header-wrapper{
     background: #0B0C0E;
     padding: 0;
-    height: 64px;
+    height: 54px;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -14,7 +14,7 @@
 }
 
 .header-main{
-    height: 64px!important;
+    height: 54px!important;
     background: #0B0C0E;
 }
 #menu-navbar {
