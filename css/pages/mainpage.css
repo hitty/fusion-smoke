@@ -1,7 +1,7 @@
 .mainpage-logo {
     display: block;
     width: 320px;
-    margin: 80px auto;
+    margin: 60px auto;
 }
 
 .mainpage-chapters{
@@ -71,7 +71,7 @@
 @media(max-width:992px){
     .mainpage-logo{
         width: 220px;
-        margin: 40px auto;
+        margin: 30px auto;
     }
     .mainpage-chapters{
         margin: 0;
