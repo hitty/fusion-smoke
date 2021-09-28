@@ -23,6 +23,7 @@ add_action( 'wp_enqueue_scripts', function () {
 
     wp_enqueue_style( 'child-about-style',      get_stylesheet_directory_uri() . '/css/pages/about.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-cart-page-style',  get_stylesheet_directory_uri() . '/css/pages/cart.css',      ['flatsome-main'] , '1.0', 'all' );
+    wp_enqueue_style( 'child-contacts-page-style',get_stylesheet_directory_uri() . '/css/pages/contacts.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-mainpage-style',   get_stylesheet_directory_uri() . '/css/pages/mainpage.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-shop-style',       get_stylesheet_directory_uri() . '/css/pages/shop.css',      ['flatsome-main'] , '1.0', 'all' );
 

@@ -158,7 +158,7 @@ section {
 }
 
 #main{
-    min-height: calc( 100vh - 267px );
+    min-height: calc( 100vh - 307px );
 }
 @media (max-width: 992px) {
     #main{
