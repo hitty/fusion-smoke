@@ -9,3 +9,6 @@
 .about-social a.icon:not(.button){
     margin: 0 18px 0 0;
 }
+#col-1250731406 > .col-inner{
+    padding: 0!important;
+}

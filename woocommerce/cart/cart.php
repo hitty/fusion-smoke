@@ -47,6 +47,16 @@ do_action( 'woocommerce_before_cart' ); ?>
                 <?php do_action( 'woocommerce_before_cart_table' ); ?>
 
                 <table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <td class="product-thumbnail"><?php esc_html_e( 'Product', 'woocommerce' ); ?></td>
+                        <td class="product-name"></td>
+                        <td class="product-price"><?php esc_html_e( 'Price', 'woocommerce' ); ?></td>
+                        <td class="product-quantity"><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></td>
+                        <td class="product-subtotal"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></td>
+                        <td class="product-remove"></td>
+                    </tr>
+                    </thead>
                     <tbody>
                     <?php do_action( 'woocommerce_before_cart_contents' ); ?>
 

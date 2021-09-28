@@ -13,7 +13,7 @@
 }
 .chapter-item {
     position: relative;
-    height: 346px;
+    height: 320px;
     padding: 48px 58px;
     width: calc( 50% - 40px );
     margin: 20px;
@@ -57,7 +57,7 @@
 }
 
 .chapter-text {
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
     position: relative;
 }
