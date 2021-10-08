@@ -266,6 +266,7 @@
 }
 
 .subcategories-list > li {
+    width: auto;
 }
 
 .subcategories-list > li > a {
