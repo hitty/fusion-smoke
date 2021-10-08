@@ -4,12 +4,15 @@ form.checkout h3 {
     text-transform: none;
     padding-top: 0;
 }
-form.checkout .woocommerce-additional-fields{
+
+form.checkout .woocommerce-additional-fields {
     margin-top: 24px;
 }
-form.checkout .woocommerce-additional-fields h3{
+
+form.checkout .woocommerce-additional-fields h3 {
     font-size: 18px;
 }
+
 .woocommerce-billing-fields .address-field.update_totals_on_change {
     margin: 54px 0;
 }
@@ -39,11 +42,12 @@ form.checkout .woocommerce-additional-fields h3{
     display: block;
     clear: none;
 }
+
 .woocommerce-billing-fields .validate-email {
     width: 48%;
     display: block;
     clear: none;
-    float: none;
+    float: left;
 }
 
 @media (min-width: 550px) {
@@ -51,45 +55,96 @@ form.checkout .woocommerce-additional-fields h3{
         margin-right: 4%;
     }
 }
+
 @media (max-width: 551px) {
     .woocommerce-billing-fields .validate-phone,
-    .woocommerce-billing-fields .validate-email{
+    .woocommerce-billing-fields .validate-email {
         width: 100%;
     }
 }
-.woocommerce-checkout-review-order-table{
-background: #F9FCFF;
-border-radius: 12px;
+
+.woocommerce-checkout-review-order-table {
+    background: #F9FCFF;
+    border-radius: 12px;
     padding: 16px 24px;
 }
-.woocommerce-checkout-review-order-table thead{
+
+.woocommerce-checkout-review-order-table thead {
     display: none;
 }
-.woocommerce-checkout-review-order-table .product-name{
+
+.woocommerce-checkout-review-order-table .product-name {
     font-weight: 500;
     font-size: 16px;
     color: var(--black);
 }
-.woocommerce-checkout-review-order-table td{
+
+.woocommerce-checkout-review-order-table td {
     padding: 16px 0;
 }
-.woocommerce-checkout-review-order-table th{
+
+.woocommerce-checkout-review-order-table th {
     font-weight: 500;
     font-size: 16px;
     color: #747A8E;
 }
-.woocommerce-checkout-review-order-table .order-total .woocommerce-Price-amount bdi{
+
+.woocommerce-checkout-review-order-table .order-total .woocommerce-Price-amount bdi {
     font-weight: 800;
     font-size: 24px;
 }
+
 .woocommerce-checkout-review-order-table.shop_table .order-total th,
-.woocommerce-checkout-review-order-table.shop_table .order-total td{
+.woocommerce-checkout-review-order-table.shop_table .order-total td {
     border: none;
 }
+
 .woocommerce-notice.woocommerce-notice--info.woocommerce-info,
-.woocommerce-privacy-policy-text{
+.woocommerce-privacy-policy-text {
     color: var(--text-color);
     font-weight: 500;
     font-size: 14px;
     margin-bottom: 24px;
+}
+
+.woocommerce-account-fields .create-account {
+    padding: 24px;
+    background: #F9FCFF;
+    border-radius: 12px;
+}
+
+#createaccount {
+    display: none;
+}
+
+#createaccount + span {
+    background: url("data:image/svg+xml,%3Csvg width='22' height='22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='20' height='20' rx='1' fill='%23fff' stroke='%2359D7CF' stroke-width='2'/%3E%3C/svg%3E") left no-repeat;
+    border: none;
+    padding-left: 32px;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#createaccount:checked + span {
+    background: url("data:image/svg+xml,%3Csvg width='22' height='22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='20' height='20' rx='1' fill='%2359D7CF' stroke='%2359D7CF' stroke-width='2'/%3E%3Cpath d='M4.5 12.5 8 16l9-9' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E") left no-repeat;
+}
+
+
+#createaccount + span:before {
+    content: '';
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    background-image: url("data:image/svg+xml,%3Csvg width='19' height='19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.285 10.758c-.88.811-1.992 1.296-3.2 1.296-1.209 0-2.32-.485-3.2-1.296l-.018.005c-1.777.466-2.921 1.302-3.553 2.339a3.26 3.26 0 0 0-.425 1.048 1.976 1.976 0 0 0-.016.094 10.264 10.264 0 0 0 7.212 2.945c2.738 0 5.303-1.072 7.214-2.947a1.953 1.953 0 0 0-.017-.099 3.218 3.218 0 0 0-.426-1.046c-.634-1.033-1.781-1.868-3.554-2.334a1.099 1.099 0 0 1-.017-.005Zm1.164-1.505c3.618 1.286 5.599 4.71 4.341 6.015a12.048 12.048 0 0 1-8.705 3.703c-3.332 0-6.45-1.356-8.712-3.71-1.243-1.293.73-4.722 4.348-6.008a6.338 6.338 0 0 1-.227-.46c-.367-.828-.575-2.573-.575-3.57C3.92 1.895 6.232 0 9.085 0s5.165 1.895 5.165 5.223c0 1.014-.214 2.773-.593 3.612a6.34 6.34 0 0 1-.208.418Zm-1.416-1.152c.218-.482.436-1.928.436-2.878 0-2.17-1.335-3.441-3.384-3.441-2.05 0-3.384 1.27-3.384 3.441 0 .938.211 2.373.422 2.848.608 1.371 1.753 2.2 2.962 2.2 1.2 0 2.336-.815 2.948-2.17Z' fill='%230B0C0E'/%3E%3C/svg%3E");
+    margin: 1px 16px 0 14px;
+    transform: translateY(2px);
+    position: relative;
+    top: 2px;
+}
+.container .message-container{
+    padding: 24px;
+    background: #F9FCFF;
+    border-radius: 12px;
 }
