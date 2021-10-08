@@ -28,16 +28,14 @@
 
 .widget_product_categories > ul > li {
     padding: 0;
-    margin: 0 0 24px 0;
+    margin: 0 0 16px 0;
     display: block;
 }
 .widget_product_categories > ul > li:last-of-type{
     margin-bottom: 0;
 }
 .widget_product_categories > ul > li.has-child a {
-    padding: 0;
-    /* margin: 0 24px 0 0; */
-    /* display: block; */
+
 }
 
 .widget_product_categories > ul > li.has-child button {
