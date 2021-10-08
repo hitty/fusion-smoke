@@ -23,6 +23,7 @@ add_action( 'wp_enqueue_scripts', function () {
 
     wp_enqueue_style( 'child-about-style',      get_stylesheet_directory_uri() . '/css/pages/about.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-cart-page-style',  get_stylesheet_directory_uri() . '/css/pages/cart.css',      ['flatsome-main'] , '1.0', 'all' );
+    wp_enqueue_style( 'child-checkout-page-style',  get_stylesheet_directory_uri() . '/css/pages/checkout.css',      ['flatsome-main', 'flatsome-shop'] , '1.0', 'all' );
     wp_enqueue_style( 'child-contacts-page-style',get_stylesheet_directory_uri() . '/css/pages/contacts.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-mainpage-style',   get_stylesheet_directory_uri() . '/css/pages/mainpage.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-shop-style',       get_stylesheet_directory_uri() . '/css/pages/shop.css',      ['flatsome-main'] , '1.0', 'all' );
@@ -192,3 +193,22 @@ add_filter( 'woocommerce_loop_add_to_cart_link', function( $html, $product ) {
 }, 10, 2 );
 
 
+/**
+ * Manage checkout fields
+ *
+ */
+add_filter( 'woocommerce_checkout_fields' , function( $fields ) {
+    $fields['billing']['billing_first_name']['placeholder'] = 'First name*';
+    $fields['billing']['billing_last_name']['placeholder'] = 'Last name*';
+    $fields['billing']['billing_company']['placeholder'] = 'Company name (optional)*';
+    $fields['billing']['billing_address_2']['placeholder'] = 'Apartment';
+    $fields['billing']['billing_city']['placeholder'] = 'Town / City*';
+    $fields['billing']['billing_state']['placeholder'] = 'State / County (optional)';
+    $fields['billing']['billing_phone']['placeholder'] = 'Phone*';
+    $fields['billing']['billing_email']['placeholder'] = 'Email address*';
+    $fields['order']['order_comments']['placeholder'] = 'Order notes (optional)';
+    $fields['billing']['billing_postcode']['placeholder'] = 'Postcode / ZIP';
+    $fields['billing']['billing_first_name']['label'] = $fields['billing']['billing_last_name']['label'] = $fields['billing']['billing_company']['label'] = $fields['billing']['billing_city']['label'] = $fields['billing']['billing_state']['label'] = $fields['billing']['billing_phone']['label'] = $fields['billing']['billing_email']['label'] = $fields['order']['order_comments']['label'] = $fields['billing']['billing_postcode']['label'] = '';
+
+    return $fields;
+});

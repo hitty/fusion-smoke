@@ -1,0 +1,95 @@
+form.checkout h3 {
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: none;
+    padding-top: 0;
+}
+form.checkout .woocommerce-additional-fields{
+    margin-top: 24px;
+}
+form.checkout .woocommerce-additional-fields h3{
+    font-size: 18px;
+}
+.woocommerce-billing-fields .address-field.update_totals_on_change {
+    margin: 54px 0;
+}
+
+.woocommerce-billing-fields {
+    padding: 0;
+    border: none;
+}
+
+.woocommerce-billing-fields p {
+    margin-bottom: 24px;
+}
+
+.woocommerce-billing-fields p label {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.woocommerce-billing-fields p label + .woocommerce-input-wrapper > * {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.woocommerce-billing-fields .validate-phone {
+    width: 48%;
+    float: left;
+    display: block;
+    clear: none;
+}
+.woocommerce-billing-fields .validate-email {
+    width: 48%;
+    display: block;
+    clear: none;
+    float: none;
+}
+
+@media (min-width: 550px) {
+    .woocommerce-billing-fields .validate-phone {
+        margin-right: 4%;
+    }
+}
+@media (max-width: 551px) {
+    .woocommerce-billing-fields .validate-phone,
+    .woocommerce-billing-fields .validate-email{
+        width: 100%;
+    }
+}
+.woocommerce-checkout-review-order-table{
+background: #F9FCFF;
+border-radius: 12px;
+    padding: 16px 24px;
+}
+.woocommerce-checkout-review-order-table thead{
+    display: none;
+}
+.woocommerce-checkout-review-order-table .product-name{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--black);
+}
+.woocommerce-checkout-review-order-table td{
+    padding: 16px 0;
+}
+.woocommerce-checkout-review-order-table th{
+    font-weight: 500;
+    font-size: 16px;
+    color: #747A8E;
+}
+.woocommerce-checkout-review-order-table .order-total .woocommerce-Price-amount bdi{
+    font-weight: 800;
+    font-size: 24px;
+}
+.woocommerce-checkout-review-order-table.shop_table .order-total th,
+.woocommerce-checkout-review-order-table.shop_table .order-total td{
+    border: none;
+}
+.woocommerce-notice.woocommerce-notice--info.woocommerce-info,
+.woocommerce-privacy-policy-text{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 24px;
+}

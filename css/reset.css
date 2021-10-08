@@ -138,10 +138,14 @@ section {
     z-index: 1;
 }
 
-.icon > * {
+.icon path,
+.icon circle,
+.icon rect{
     transition: .3s all ease-in-out;
 }
 
+.icon:hover circle,
+.icon:hover rect,
 .icon:hover path {
     fill: #59D7CF;
 }

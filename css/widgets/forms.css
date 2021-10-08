@@ -111,3 +111,20 @@ form .container{
     margin-left: -10px;
     border-bottom-color: rgba(255,255,255,.85);
 }
+
+
+.woocommerce-input-wrapper input,
+.woocommerce-input-wrapper textarea,
+.woocommerce-input-wrapper select,
+.select-resize-ghost,
+.select2-container
+.select2-choice,
+.select2-container .select2-selection{
+    background: #FFFFFF;
+    border: 1px solid #C1C6D7;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 48px;
+    font-size: 18px;
+    margin: 0;
+}

@@ -296,7 +296,7 @@
     padding: 12px 24px;
     top: 100px;
     right: 32px;
-    /* opacity: 0; */
+    z-index: 10;
 }
 
 .woocommerce-notices-wrapper .woocommerce-message {
@@ -648,8 +648,12 @@
     }
 
     .quantity .button.minus, .quantity .button.plus {
+        padding: 0 12px;
+        height: 40px;
     }
-
+    .quantity input[type=number]{
+        height: 45px;
+    }
     .product-thumbnails a {
     }
 

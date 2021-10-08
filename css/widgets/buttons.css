@@ -75,7 +75,8 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
     cursor: not-allowed;
 }
 .btn-filled,
-.button.checkout-button{
+.button.checkout-button,
+#place_order{
     color: var(--black);
     border: 2px solid var(--mint);
     background: var(--mint)!important;
@@ -84,10 +85,17 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
 .cart .single_add_to_cart_button:hover,
 .btn-filled:hover,
 .product .add_to_cart_button:hover,
-.button.checkout-button:hover{
+.button.checkout-button:hover,
+#place_order:hover{
     color: var(--black);
     border: 2px solid var(--mint);
     background: transparent!important;
+}
+#place_order{
+    display: block;
+    margin-left: auto;
+    width: 90%;
+    margin-right: auto;
 }
 @media (max-width: 992px) {
     .btn {
