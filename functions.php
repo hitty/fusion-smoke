@@ -212,3 +212,21 @@ add_filter( 'woocommerce_checkout_fields' , function( $fields ) {
 
     return $fields;
 });
+
+function exclude_products_from_child_cats( $wp_query ) {
+    if ( ! is_admin() && $wp_query->is_main_query()) {
+        if (isset( $wp_query->query_vars['product_cat'] )) {
+            $tax_query = array(
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field' => 'slug',
+                    'terms' => $wp_query->query_vars['product_cat'],
+                    'include_children' => false
+                )
+            );
+            $wp_query->set( 'tax_query', $tax_query );
+        }
+    }
+}
+
+add_filter( 'pre_get_posts', 'exclude_products_from_child_cats' );
