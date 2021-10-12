@@ -22,7 +22,12 @@ defined( 'ABSPATH' ) || exit;
 do_action( 'woocommerce_before_mini_cart' ); ?>
 
 <?php if ( ! WC()->cart->is_empty() ) : ?>
-
+    <button title="Close (Esc)" type="button" class="mfp-close mini-cart-close">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10.1006" y="8" width="30" height="2" rx="1" transform="rotate(45 10.1006 8)" fill="#0B0C0E"/>
+            <rect x="8.68652" y="29.2133" width="30" height="2" rx="1" transform="rotate(-45 8.68652 29.2133)" fill="#0B0C0E"/>
+        </svg>
+    </button>
     <ul class="woocommerce-mini-cart cart_list product_list_widget <?php echo esc_attr( $args['list_class'] ); ?>">
         <?php
         do_action( 'woocommerce_before_mini_cart_contents' );

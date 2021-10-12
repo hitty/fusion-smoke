@@ -53,12 +53,30 @@ add_filter( 'woocommerce_product_tabs', function ( $tabs ) {
 remove_action('woocommerce_single_product_summary','woocommerce_template_single_sharing',50);
 
 /**
+ *  Remove short description
+ **/
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+
+function woocommerce_template_single_excerpt() {
+    return;
+}
+/**
  *  Add "additional information" after add to cart
  **/
 add_action( 'woocommerce_single_product_summary', function () {
     global $product;
     wc_display_product_attributes( $product );
-    if( strlen( $product->description ) > 20 ) echo '<div class="product-description"><p class="product-description-title">Description</p> ' . $product->description . '</div>';
+
+    if( strlen( $product->description ) > 20 || strlen( $product->short_description ) > 20 )
+        echo "<p class='product-description-title'>Description</p>
+            <div class='description-container'> 
+                <div class='term-description product-description'>" . ( strlen( $product->description ) > 20 ? $product->description : $product->short_description ) . "</div>
+                <span class='expand description-btns'>
+                    Show all
+                </span>
+                <span class='hide description-btns'>Hide</span>
+            </div>";
+
     woocommerce_template_single_sharing();
 }, 135 );
 
@@ -83,10 +101,27 @@ add_action( 'init', function () {
         $title = strtolower(trim(wp_title( '', false )));
         echo $title == 'products' ? '<h1>Shop</h1>' : '<h1>' . single_term_title( '', false ) . '</h1>';
 
-        /**
-         * subcategories list
-         **/
         if ( is_product_category( ) ) {
+
+            /**
+             * description
+             **/
+            remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
+
+            $term = get_queried_object();
+            $term = $term->term_id ?? 0;
+            $description = get_term_field( 'description', $term );
+            echo "<div class='description-container'> <div class='term-description product-description'>" . $description . "</div>
+                    <span class='expand description-btns'>
+                        Show all
+                    </span>
+                    <span class='hide description-btns'>Hide</span>
+                  </div>";
+
+            /**
+             * subcategories list
+             **/
+
             $taxonomy = 'product_cat';
             $parent_terms = get_ancestors( get_queried_object_id(), $taxonomy );
 
@@ -109,7 +144,7 @@ add_action( 'init', function () {
             }
         }
 
-    }, 135 );
+    }, 2 );
 
     /**
      * hide shop title

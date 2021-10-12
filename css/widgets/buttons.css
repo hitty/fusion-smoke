@@ -3,12 +3,12 @@
 input[type=submit], input[type=submit].button, input[type=submit], .primary, .primary.add_to_cart_button, .button, .checkout-button {
     color: #FFFFFF;
     border-radius: 30px;
-    height: 48px;
-    line-height: 45px;
+    height: 44px;
+    line-height: 41px;
     padding: 0 55px;
     border: 2px solid #FFFFFF;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 16px;
     white-space: nowrap;
     transition: .3s all ease-in-out;
     background: transparent;
@@ -48,7 +48,7 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
     color: var(--black);
     border: 2px solid var(--mint);
     background: transparent;
-    line-height: 46px;
+    line-height: 41px;
 }
 
 .btn-outline:hover,
@@ -64,7 +64,7 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
     border: 2px solid var(--mint);
     font-size: 16px!important;
     line-height: 43px;
-    margin-top: 0;
+    margin: 0;
     max-width: 136px;
     padding: 0;
     width: 136px;
@@ -80,7 +80,7 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
     color: var(--black);
     border: 2px solid var(--mint);
     background: var(--mint)!important;
-    line-height: 46px;
+    line-height: 41px;
 }
 .cart .single_add_to_cart_button:hover,
 .btn-filled:hover,

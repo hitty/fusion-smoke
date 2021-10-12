@@ -43,13 +43,30 @@
 .product-small + .yith-wcbr-brands {
     display: none;
 }
-.product .product-info .price.product-page-price{
+
+.product .product-info .price.product-page-price {
     display: block;
+    border-bottom: 1px solid #D9DEED;
+    padding-bottom: 16px;
 }
-.product .price.product-page-price .woocommerce-Price-amount, .product .woocommerce-variation-price .price .amount {
+
+.product .woocommerce-variation-price .price .amount {
     font-size: 30px;
-    color: var(--mint);
+    /* color: var(--mint); */
     display: inline-block;
+}
+
+.product .price.product-page-price .woocommerce-Price-amount {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.product .price.product-page-price .woocommerce-Price-amount:before {
+    content: "Price:";
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 8px;
 }
 
 .product .woocommerce-variation-price .price .amount {
@@ -262,7 +279,7 @@
 .subcategories-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -16px -8px 32px -8px;
+    margin: 24px -8px 32px -8px;
 }
 
 .subcategories-list > li {
@@ -345,8 +362,61 @@
 
 .product-description {
     font-size: 18px;
+    max-height: 112px;
+    overflow: hidden;
+    margin-bottom: 0px;
+    transition: .3s all ease-in-out;
+}
+.description-container.expanded .product-description{
+    overflow: visible;
+    max-height: fit-content;
+}
+.product-description p{
+    margin: 0;
+}
+.product-description p + p{
+    margin: 16px 0 0 0;
 }
 
+.description-container{
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 30px;
+}    
+.description-container.expanded{
+    margin-bottom: -30px;
+
+}
+.description-btns {
+    display: inline-block;
+    position: relative;
+    margin: 12px 0 0 0;
+    font-size: 18px;
+    line-height: 25px;
+    color: #B5BACD;
+    cursor: pointer;
+}
+.description-btns:after{
+    content:"";
+    display: inline-block;
+    width: 14px;
+    height: 9px;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1 1 6 6 6-6' stroke='%23B5BACD' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+    margin-left: 12px;
+}
+.description-container.expanded .expand, .description-container .hide {
+    display: none;
+}
+.description-container.expanded .hide{
+    display: inline-block;
+}
+.description-container .hide:after{
+    transform: rotate(180deg);
+}
+.description-btns.expand{
+    position: absolute;
+    top: 111px;
+}
 .button.icon.circle > i:only-child {
     color: var(--black);
     font-size: 22px;
@@ -652,9 +722,11 @@
         padding: 0 12px;
         height: 40px;
     }
-    .quantity input[type=number]{
+
+    .quantity input[type=number] {
         height: 45px;
     }
+
     .product-thumbnails a {
     }
 

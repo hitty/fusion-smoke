@@ -14,6 +14,9 @@ jQuery(document).ready(function(){
             });
     });
 
+    jQuery('.description-btns').on('click',function(){
+        jQuery(this).parent().toggleClass( 'expanded' );
+    })
 
 });
 function changePic (parent){
