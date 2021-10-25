@@ -88,6 +88,16 @@ defined('ABSPATH') || exit;
                     <li class="woocommerce-order-overview__count count ">
                         <?php esc_html_e('Items:', 'woocommerce'); ?>
                         <strong><?php echo count($order->get_items()); ?></strong>
+                        <div class="pseudo-link woocommerce-order-overview__count-link">View
+                        <div class="woocommerce-order-overview__items-list">
+                        <?php
+                            $items = $order->get_items();
+                            foreach( $items as $k => $item ){
+                                echo "<span>" . $item->get_name() . " x " . $item->get_quantity() . "</span>";
+                            }
+                        ?>
+                        </div>
+                        </div>
                     </li>
 
                     <?php
@@ -108,19 +118,7 @@ defined('ABSPATH') || exit;
                     </li>
 
                 </ul>
-
-                <div class="clear"></div>
             </div>
-        </div>
-
-        <div class="col">
-
-            <?php
-            $get_payment_method = $order->get_payment_method();
-            $get_order_id = $order->get_id();
-            ?>
-            <?php do_action('woocommerce_thankyou_' . $get_payment_method, $get_order_id); ?>
-
         </div>
 
     <?php endif; ?>

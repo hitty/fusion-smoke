@@ -174,3 +174,9 @@ section {
         min-height: calc( 100vh - 330px );
     }
 }
+.pseudo-link{
+    display: inline;
+    cursor: pointer;
+    border-bottom: 1px dashed var(--mint);
+    color: var(--mint);
+}
