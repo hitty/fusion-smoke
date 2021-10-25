@@ -24,7 +24,7 @@ body {
 }
 
 a {
-    color: #0B0C0E;
+    color: var(--mint);
     text-decoration: none;
 }
 

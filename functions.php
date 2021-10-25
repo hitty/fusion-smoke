@@ -4,6 +4,7 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'child-fonts-style',      get_stylesheet_directory_uri() . '/css/fonts.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-reset-style',      get_stylesheet_directory_uri() . '/css/reset.css',      ['flatsome-main'] , '1.0', 'all' );
 
+    wp_enqueue_style( 'child-acc-item-style',    get_stylesheet_directory_uri() . '/css/widgets/account-item.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-buttons-style',    get_stylesheet_directory_uri() . '/css/widgets/buttons.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-cart-style',       get_stylesheet_directory_uri() . '/css/widgets/cart.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-controls-style',   get_stylesheet_directory_uri() . '/css/widgets/controls.css',      ['flatsome-main'] , '1.0', 'all' );
@@ -26,6 +27,7 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'child-checkout-page-style',  get_stylesheet_directory_uri() . '/css/pages/checkout.css',      ['flatsome-main', 'flatsome-shop'] , '1.0', 'all' );
     wp_enqueue_style( 'child-contacts-page-style',get_stylesheet_directory_uri() . '/css/pages/contacts.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-mainpage-style',   get_stylesheet_directory_uri() . '/css/pages/mainpage.css',      ['flatsome-main'] , '1.0', 'all' );
+    wp_enqueue_style( 'child-or-compl-style',   get_stylesheet_directory_uri() . '/css/pages/order-complete.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-shop-style',       get_stylesheet_directory_uri() . '/css/pages/shop.css',      ['flatsome-main'] , '1.0', 'all' );
 
     wp_enqueue_style( 'child-adaptive-style',   get_stylesheet_directory_uri() . '/css/adaptive.css',   ['flatsome-main'] , '1.0', 'all' );
