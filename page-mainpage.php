@@ -19,7 +19,7 @@ get_header(); ?>
                     </div>
                     <h3 class="chapter-title">Delivery</h3>
                     <p class="chapter-text">Description, some details</p>
-                    <a href="#" class="chapter-btn btn btn-black btn-big">ORDER NOW</a>
+                    <a href="/delivery" class="chapter-btn btn btn-black btn-big">ORDER NOW</a>
                 </div>
                 <div class="chapter-item with-gallery">
                     <div class="chapter-images-box">
@@ -29,7 +29,7 @@ get_header(); ?>
                     </div>
                     <h3 class="chapter-title">Shop</h3>
                     <p class="chapter-text">Description, some details</p>
-                    <a href="#" class="chapter-btn btn btn-black btn-big">VIEW ALL</a>
+                    <a href="/shop/" class="chapter-btn btn btn-black btn-big">VIEW ALL</a>
                 </div>
                 <div class="chapter-item">
                     <div class="chapter-images-box">
@@ -39,7 +39,7 @@ get_header(); ?>
                     </div>
                     <h3 class="chapter-title">B2B</h3>
                     <p class="chapter-text">For partners</p>
-                    <a href="#" class="chapter-btn btn btn-black btn-big">MORE</a>
+                    <a href="/b2b/" class="chapter-btn btn btn-black btn-big">MORE</a>
                 </div>
                 <div class="chapter-item">
                     <div class="chapter-images-box">
@@ -49,7 +49,7 @@ get_header(); ?>
                     </div>
                     <h3 class="chapter-title">About us</h3>
                     <p class="chapter-text">Description, some details</p>
-                    <a href="#" class="chapter-btn btn btn-black btn-big">MORE</a>
+                    <a href="/about/" class="chapter-btn btn btn-black btn-big">MORE</a>
                 </div>
 
             </div>    </div>
