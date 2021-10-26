@@ -55,7 +55,7 @@
     counter-increment: delivery-counter;
 }
 .delivery-counter-row .col-inner .delivery-counter-box:before{
-    content: counter(delivery-counter) '. ';
+    content: counter(delivery-counter);
 }
 @media(max-width: 992px){
     .delivery-btn-top{
