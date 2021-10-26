@@ -182,3 +182,12 @@ section {
 .mint{
     color: var(--mint);
 }
+.section-title{
+    border: none!important;
+    padding: 0!important;
+}
+.section-title span{
+    margin: 0!important;
+    padding: 0!important;
+    border: none;
+}

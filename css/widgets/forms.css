@@ -99,7 +99,7 @@ form .container{
     text-align: left;
     color: var(--red);
     font-size: 12px;
-    margin-top: -15px;
+    transform: translateY(-12px);
     padding: 2px 4px;
     background: rgba(255,255,255,.85);
 }
@@ -111,6 +111,7 @@ form .container{
 
 
 
+.form-light .form-control,
 form .woocommerce-Input,
 .woocommerce-input-wrapper input,
 .woocommerce-input-wrapper textarea,
@@ -126,6 +127,9 @@ form .woocommerce-Input,
     height: 48px;
     font-size: 18px;
     margin: 0;
+}
+.form-light .form-control{
+    margin-bottom: 24px;
 }
 .woocommerce form legend{
     text-transform: none;

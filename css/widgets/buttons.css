@@ -79,8 +79,8 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
 .btn-filled,
 .button.checkout-button,
 #place_order{
-    color: var(--black);
-    border: 2px solid var(--mint);
+    color: var(--black)!important;
+    border: 2px solid var(--mint)!important;
     background: var(--mint)!important;
     line-height: 41px;
 }
@@ -90,10 +90,10 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
 .product .add_to_cart_button:hover,
 .button.checkout-button:hover,
 #place_order:hover{
-    color: var(--black);
-    border: 2px solid var(--mint);
+    color: var(--black)!important;
+    border: 2px solid var(--mint)!important;
     background: white!important;
-    opacity: 1;
+    opacity: 1!important;
     box-shadow: none;
 }
 #place_order{
