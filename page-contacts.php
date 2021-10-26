@@ -63,7 +63,6 @@ get_header(); ?>
                     </li>
                 </ul>
             </div>
-            <img src="/wp-content/themes/fusion-smoke/images/contacts-bg.jpg" class="contacts-bg" alt="">
         </div>
     </div>
 </section>

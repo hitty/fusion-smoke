@@ -33,12 +33,9 @@ textarea.form-control {
     border: 1px solid #43464D;
 }
 
-input.form-control
-{
-
+input.form-control{
     background: #1B1C1E;
     border: 1px solid #43464D;
-
 
     border-radius: 25px;
     height: 48px;
@@ -113,6 +110,8 @@ form .container{
 }
 
 
+
+form .woocommerce-Input,
 .woocommerce-input-wrapper input,
 .woocommerce-input-wrapper textarea,
 .woocommerce-input-wrapper select,
@@ -127,4 +126,42 @@ form .container{
     height: 48px;
     font-size: 18px;
     margin: 0;
+}
+.woocommerce form legend{
+    text-transform: none;
+    border-bottom: 2px solid var(--black);
+    margin-top: 48px;
+    display: block;
+}
+.woocommerce-form em,
+.woocommerce-form label,
+.form-row em,
+.form-row label{
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.form-row{
+    margin-bottom: 24px;
+    display: block;
+}
+.woocommerce-LostPassword{
+
+}
+.woocommerce-password-text{
+    font-weight: bold;
+    font-size: 18px;
+}
+.woocommerce-LostPassword{
+    font-weight: bold;
+    font-size: 14px;
+}
+.woocommerce-form-title{
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.woocommerce-form__label.woocommerce-form__label-for-checkbox{
+    display: flex;
+    align-items: center;
 }

@@ -85,6 +85,10 @@ defined('ABSPATH') || exit;
                         <?php esc_html_e('Address:', 'woocommerce'); ?>
                         <strong><?php echo $order->get_billing_address_1( ) . ', ' . $order->get_billing_city(); ?></strong>
                     </li>
+                    <li class="woocommerce-order-overview__phone phone">
+                        <?php esc_html_e('Phone:', 'woocommerce'); ?>
+                        <strong><?php echo $order->get_billing_phone(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
+                    </li>
                     <li class="woocommerce-order-overview__count count ">
                         <?php esc_html_e('Items:', 'woocommerce'); ?>
                         <strong><?php echo count($order->get_items()); ?></strong>

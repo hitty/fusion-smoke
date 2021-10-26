@@ -1,6 +1,6 @@
 
 .btn,.btn-outline,.btn-filled,
-input[type=submit], input[type=submit].button, input[type=submit], .primary, .primary.add_to_cart_button, .button, .checkout-button {
+input[type=submit], input[type=submit].button, input[type=submit], .primary, .primary.add_to_cart_button, .button, .checkout-button,.woocommerce-button {
     color: #FFFFFF;
     border-radius: 30px;
     height: 44px;
@@ -35,6 +35,7 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
     background: #59D7CF;
     color: #FFFFFF;
 }
+.woocommerce-button,
 .btn.add_to_cart_button{
     background: var(--mint);
     color: var(--black);
@@ -43,6 +44,7 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
     font-size: 16px;
     border-color: var(--mint);
 }
+
 .btn-outline,
 .button.is-outline{
     color: var(--black);
@@ -82,6 +84,7 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
     background: var(--mint)!important;
     line-height: 41px;
 }
+.woocommerce-button:hover,
 .cart .single_add_to_cart_button:hover,
 .btn-filled:hover,
 .product .add_to_cart_button:hover,
@@ -89,7 +92,9 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
 #place_order:hover{
     color: var(--black);
     border: 2px solid var(--mint);
-    background: transparent!important;
+    background: white!important;
+    opacity: 1;
+    box-shadow: none;
 }
 #place_order{
     display: block;

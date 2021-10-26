@@ -1,7 +1,5 @@
 *:hover, *:focus, *:active {
     outline: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
 }
 
 html {
@@ -15,6 +13,8 @@ body {
     color: #0B0C0E;
     font-weight: 400;
     font-size: 18px;
+    min-height: 100%;
+    background-color: white;
 }
 
 @media (max-width: 992px) {
@@ -24,7 +24,7 @@ body {
 }
 
 a {
-    color: var(--mint);
+    color: #0B0C0E;
     text-decoration: none;
 }
 
@@ -162,7 +162,7 @@ section {
 }
 
 #main{
-    min-height: calc( 100vh - 307px );
+    min-height: calc( 100vh - 215px );
 }
 @media (max-width: 992px) {
     #main{
@@ -178,5 +178,8 @@ section {
     display: inline;
     cursor: pointer;
     border-bottom: 1px dashed var(--mint);
+    color: var(--mint);
+}
+.mint{
     color: var(--mint);
 }

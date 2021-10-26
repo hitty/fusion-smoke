@@ -14,3 +14,33 @@
 .account-item .nav-dropdown.nav-dropdown-default>li.active>a{
     color: var(--mint);
 }
+.woocommerce-form-login__rememberme{
+    margin: 24px 0;
+}
+.row-divided>.col+.col:not(.large-12){
+    border-left: 3px solid #000000;
+}
+@media(max-width: 992px){
+    .row-divided>.col+.col:not(.large-12){
+        border-left: none;
+        border-top: 3px solid #000000;
+        padding-top: 36px;
+        margin-top: 36px;
+    }
+}
+.account-nav{
+    background: #F1F4F6;
+    border-radius: 12px;
+    padding: 12px 24px;
+}
+.woocommerce-MyAccount-navigation-link,
+.woocommerce-MyAccount-navigation-link + .woocommerce-MyAccount-navigation-link{
+    border: none;
+}
+.woocommerce-MyAccount-navigation-link>a:hover,
+.woocommerce-MyAccount-navigation-link.active>a{
+    color: var(--mint)!important;
+}
+.woocommerce-MyAccount-navigation-link>a{
+    color: var(--black)!important;
+}
