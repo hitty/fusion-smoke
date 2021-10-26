@@ -27,6 +27,7 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'child-cart-page-style',  get_stylesheet_directory_uri() . '/css/pages/cart.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-chckt-page-style', get_stylesheet_directory_uri() . '/css/pages/checkout.css',      ['flatsome-main', 'flatsome-shop'] , '1.0', 'all' );
     wp_enqueue_style( 'child-cntcts-page-style',get_stylesheet_directory_uri() . '/css/pages/contacts.css',      ['flatsome-main'] , '1.0', 'all' );
+    wp_enqueue_style( 'child-dlvr-page-style',  get_stylesheet_directory_uri() . '/css/pages/delivery.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-mainpage-style',   get_stylesheet_directory_uri() . '/css/pages/mainpage.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-or-compl-style',   get_stylesheet_directory_uri() . '/css/pages/order-complete.css',      ['flatsome-main'] , '1.0', 'all' );
     wp_enqueue_style( 'child-shop-style',       get_stylesheet_directory_uri() . '/css/pages/shop.css',      ['flatsome-main'] , '1.0', 'all' );

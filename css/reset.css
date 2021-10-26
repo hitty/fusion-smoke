@@ -58,7 +58,7 @@ h1 {
 
 h2 {
     font-weight: bold;
-    font-size: 52px;
+    font-size: 49px;
     margin-bottom: 30px;
     color: white;
 }
@@ -75,8 +75,7 @@ h3 {
     }
     h2 {
         font-size: 44px;
-        text-align: center;
-
+        /* text-align: center; */
     }
     h3 {
         font-size: 20px;
