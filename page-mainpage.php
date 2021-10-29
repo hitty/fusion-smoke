@@ -19,7 +19,7 @@ get_header(); ?>
                     </div>
                     <h3 class="chapter-title">Delivery</h3>
                     <p class="chapter-text">Description, some details</p>
-                    <a href="http://catering.fusion-smoke.local/shop/" class="chapter-btn btn btn-black btn-big">REQUEST NOW</a>
+                    <a href="/product-category/catering/" class="chapter-btn btn btn-black btn-big">REQUEST NOW</a>
                 </div>
                 <div class="chapter-item with-gallery">
                     <div class="chapter-images-box">
@@ -29,7 +29,7 @@ get_header(); ?>
                     </div>
                     <h3 class="chapter-title">Shop</h3>
                     <p class="chapter-text">Description, some details</p>
-                    <a href="http://fusion-smoke.local/shop/" class="chapter-btn btn btn-black btn-big">VIEW ALL</a>
+                    <a href="/shop/" class="chapter-btn btn btn-black btn-big">VIEW ALL</a>
                 </div>
                 <div class="chapter-item">
                     <div class="chapter-images-box">
