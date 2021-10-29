@@ -1,46 +1,68 @@
-.account-item .nav-dropdown{
+.account-item .nav-dropdown {
     border-radius: 12px;
     border: none;
     padding: 18px 24px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,.1)!important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1) !important;
+    top: 38px;
 }
-.account-item .nav-dropdown.nav-dropdown-default>li>a{
+
+.account-item .nav-dropdown.nav-dropdown-default > li > a {
     padding: 6px 0;
     border: none;
-    margin:0;
+    margin: 0;
     color: var(--black);
 }
-.account-item .nav-dropdown.nav-dropdown-default>li>a:hover,
-.account-item .nav-dropdown.nav-dropdown-default>li.active>a{
+
+.account-item .nav-dropdown.nav-dropdown-default > li > a:hover,
+.account-item .nav-dropdown.nav-dropdown-default > li.active > a {
     color: var(--mint);
 }
-.woocommerce-form-login__rememberme{
+
+.woocommerce-form-login__rememberme {
     margin: 24px 0;
 }
-.row-divided>.col+.col:not(.large-12){
+
+.row-divided > .col + .col:not(.large-12) {
     border-left: 3px solid #000000;
 }
-@media(max-width: 992px){
-    .row-divided>.col+.col:not(.large-12){
+
+@media (max-width: 992px) {
+    .row-divided > .col + .col:not(.large-12) {
         border-left: none;
         border-top: 3px solid #000000;
         padding-top: 36px;
         margin-top: 36px;
     }
 }
-.account-nav{
+
+.account-nav {
     background: #F1F4F6;
     border-radius: 12px;
     padding: 12px 24px;
 }
+
 .woocommerce-MyAccount-navigation-link,
-.woocommerce-MyAccount-navigation-link + .woocommerce-MyAccount-navigation-link{
+.woocommerce-MyAccount-navigation-link + .woocommerce-MyAccount-navigation-link {
     border: none;
 }
-.woocommerce-MyAccount-navigation-link>a:hover,
-.woocommerce-MyAccount-navigation-link.active>a{
-    color: var(--mint)!important;
+
+.woocommerce-MyAccount-navigation-link > a:hover,
+.woocommerce-MyAccount-navigation-link.active > a {
+    color: var(--mint) !important;
 }
-.woocommerce-MyAccount-navigation-link>a{
-    color: var(--black)!important;
+
+.woocommerce-MyAccount-navigation-link > a {
+    color: var(--black) !important;
+}
+.woocommerce-Address-title{position: relative;}
+.woocommerce-Address-title .edit,
+.woocommerce-Address-title .add
+{position: absolute;top: 11px;right: 0;}
+.woocommerce-Address address{
+    background: #FFFFFF;
+    border: 2px solid #E8F1F8;
+    padding: 24px;
+    border-radius: 12px;
+    font-style: normal;
+    font-size: 16px;
 }

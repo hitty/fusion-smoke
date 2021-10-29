@@ -128,7 +128,6 @@ add_action( 'init', function () {
 
             $taxonomy = 'product_cat';
             $parent_terms = get_ancestors( get_queried_object_id(), $taxonomy );
-
             if( sizeof( $parent_terms ) > 0 ) {
                 $term_id  = sizeof( $parent_terms ) == 1 ? get_queried_object_id() : $parent_terms[0];
                 // Get subcategories of the current category
@@ -269,3 +268,68 @@ function exclude_products_from_child_cats( $wp_query ) {
 }
 
 add_filter( 'pre_get_posts', 'exclude_products_from_child_cats' );
+
+
+/**
+ * Shop type in category
+ */
+//Product Cat creation page
+function text_domain_taxonomy_add_new_meta_field() {
+    ?>
+    <div class="form-field">
+        <label for="term_meta[shop_category]"><?php _e('Category type', 'text_domain'); ?></label>
+        <select name="term_meta[shop_category]" id="term_meta[shop_category]">
+            <option value="">-- None --</option>
+            <option class="level-0" value="1">Shop</option>
+            <option class="level-0" value="2">Catering</option>
+        </select>
+        <p class="description"><?php _e('Shop or catering', 'text_domain'); ?></p>
+    </div>
+    <?php
+}
+
+add_action('product_cat_add_form_fields', 'text_domain_taxonomy_add_new_meta_field', 10, 2);
+
+//Product Cat Edit page
+function text_domain_taxonomy_edit_meta_field($term) {
+
+    //getting term ID
+    $term_id = $term->term_id;
+
+    // retrieve the existing value(s) for this meta field. This returns an array
+    $term_meta = get_option("taxonomy_" . $term_id);
+    ?>
+    <tr class="form-field">
+        <th scope="row" valign="top"><label for="term_meta[shop_category]"><?php _e('Category type', 'text_domain'); ?></label></th>
+        <td>
+            <?php $shop_category = esc_attr($term_meta['shop_category']) ?? ''; ?>
+            <select name="term_meta[shop_category]" id="term_meta[shop_category]">
+                <option value="">-- None --</option>
+                <option <?php if( $shop_category == 1 ) echo "selected='selected'" ;?> value="1">Shop</option>
+                <option <?php if( $shop_category == 2 ) echo "selected='selected'" ;?> value="2">Catering</option>
+            </select>
+            <p class="description"><?php _e('Shop or catering', 'text_domain'); ?></p>
+        </td>
+    </tr>
+    <?php
+}
+
+add_action('product_cat_edit_form_fields', 'text_domain_taxonomy_edit_meta_field', 10, 2);
+
+// Save extra taxonomy fields callback function.
+function save_taxonomy_custom_meta($term_id) {
+    if (isset($_POST['term_meta'])) {
+        $term_meta = get_option("taxonomy_" . $term_id);
+        $cat_keys = array_keys($_POST['term_meta']);
+        foreach ($cat_keys as $key) {
+            if (isset($_POST['term_meta'][$key])) {
+                $term_meta[$key] = $_POST['term_meta'][$key];
+            }
+        }
+        // Save the option array.
+        update_option("taxonomy_" . $term_id, $term_meta);
+    }
+}
+
+add_action('edited_product_cat', 'save_taxonomy_custom_meta', 10, 2);
+add_action('create_product_cat', 'save_taxonomy_custom_meta', 10, 2);

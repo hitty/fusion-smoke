@@ -48,14 +48,18 @@ header .nav>li>a:after{
 header .nav>li>a:hover{
     color: #888888;
 }
+header .nav>li.active>a:after,
 header .nav>li>a:hover:after{
     width: 100%;
     left: 0;
 }
-#menu-navbar .current_page_item a, header .nav-left.nav>li.active>a, header .nav-left.nav>li.current>a, header .nav>li>a.active, header .nav>li>a.current, .nav-dropdown li.active>a, .nav-column li.active>a, .nav-dropdown>li>a:hover, .nav-column li>a:hover,
-#main-menu .nav-sidebar.nav>.current_page_item>a{
+#menu-navbar .current_page_item a,  header .nav-left.nav>li.current>a, header .nav>li>a.active, header .nav>li>a.current, .nav-dropdown li.active>a, .nav-column li.active>a, .nav-dropdown>li>a:hover, .nav-column li>a:hover, #main-menu .nav-sidebar.nav>.current_page_item>a{
     color: #888888;
     border-color: #59D7CF;
+}
+header .nav-left.nav>li.active>a{
+    border: none;
+    color: #888888;
 }
 .account-link.account-login,
 .account-item >a,
