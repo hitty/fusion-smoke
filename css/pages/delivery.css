@@ -11,7 +11,13 @@
 .delivery-icon-box {
 
 }
-
+.delivery-icon-box .icon-box-img svg{
+    width: 64px;
+}
+.delivery-icon-box .icon-box-img svg rect,
+.delivery-icon-box .icon-box-img svg path{
+    fill: rgb(0, 102, 248);
+}
 .delivery-icon-box h3 {
     font-weight: 800;
     font-size: 24px;
