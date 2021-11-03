@@ -19,14 +19,17 @@
 .widget_product_categories > ul > li a:hover, .widget_product_categories ul li.active:not([aria-expanded="true"]) > a {
     color: var(--mint);
 }
+
 .widget_product_categories > ul > li {
     padding: 0;
     margin: 0 0 16px 0;
     display: block;
 }
-.widget_product_categories > ul > li:last-of-type{
+
+.widget_product_categories > ul > li:last-of-type {
     margin-bottom: 0;
 }
+
 .widget_product_categories > ul > li .children {
     border: none;
 }
@@ -41,31 +44,25 @@
 }
 
 .widget_product_categories > ul > li .children li button, .widget_product_categories > ul > li .children li .children {
-    display: none!important;
+    display: none !important;
 }
 
 .widget_product_categories .widget-title,
-.is-divider{
+.is-divider {
     display: none;
 }
-.widget_product_categories + .widget_product_categories{
 
+.widget_product_categories + .widget_product_categories > ul {
+    background: #E1F5F2;
 }
-.widget_product_categories + .widget_product_categories > ul{background: #E1F5F2;}
-.widget_product_categories + .widget_product_categories > ul > li {
 
-}
-.widget_product_categories + .widget_product_categories > ul > li a {
-
-}
-.widget_product_categories + .widget_product_categories > ul > li a:hover,
-.widget_product_categories + .widget_product_categories > ul li.active:not([aria-expanded="true"]) > a {
-
-}
-.widget_product_categories + .widget_product_categories > ul:after{content: "Delivery details";display: block;position: absolute;left: 0;bottom: -32px;font-weight: 500;font-size: 14px;color: #747A8E;padding-left: 24px;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 15 20'%3E%3Cdefs/%3E%3Cpath fill='%2359D7CF' d='M9.82 1a.5.5 0 00-.847-.36L7.195 2.35a35.552 35.552 0 00-6.63 8.715.5.5 0 00.435.746h4.31V19a.5.5 0 00.837.37l.795-.725a35.498 35.498 0 007.001-8.78l.492-.87A.5.5 0 0014 8.247H9.82V1z'/%3E%3C/svg%3E");background-repeat: no-repeat;}
-.widget_product_categories + .widget_product_categories > ul{
-
-}
-.widget_product_categories + .widget_product_categories > ul{
-
+.catering-sidebar-link {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    color: #747A8E;
+    transform: translateY(-8px);
+    padding-left: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 15 20'%3E%3Cdefs/%3E%3Cpath fill='%2359D7CF' d='M9.82 1a.5.5 0 00-.847-.36L7.195 2.35a35.552 35.552 0 00-6.63 8.715.5.5 0 00.435.746h4.31V19a.5.5 0 00.837.37l.795-.725a35.498 35.498 0 007.001-8.78l.492-.87A.5.5 0 0014 8.247H9.82V1z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
 }
