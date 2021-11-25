@@ -14,8 +14,6 @@ get_header(); ?>
                 <div class="chapter-item with-gallery">
                     <div class="chapter-images-box">
                         <img src="/wp-content/uploads/2021/09/chapter-1.jpg" class="chapter-image is-active">
-                        <img src="/wp-content/uploads/2021/09/chapter-2.jpg" class="chapter-image">
-                        <img src="/wp-content/uploads/2021/09/chapter-3.jpg" class="chapter-image">
                     </div>
                     <h3 class="chapter-title">Delivery</h3>
                     <p class="chapter-text">Description, some details</p>

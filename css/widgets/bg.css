@@ -1,10 +1,10 @@
-.page-id-9,
 .page-id-43 {
     background-image: url('/wp-content/themes/fusion-smoke/images/contacts-bg.jpg');
     background-repeat: no-repeat;
     background-color: #ffffff;
     background-position: calc( 50vw - 00px ) calc( 100% - 180px );
     background-size: 380px auto;
+    background-size: 50vw auto;
 }
 #wrapper, #main{
     background-color: transparent;

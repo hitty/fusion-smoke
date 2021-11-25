@@ -206,6 +206,9 @@ function my_text_strings( $translated_text, $text, $domain ) {
         case 'cart' :
             $translated_text = __( 'Shopping Cart', 'woocommerce' );
             break;
+        case 'billing details' :
+            $translated_text = __( 'Shipping details', 'woocommerce' );
+            break;
     }
     return $translated_text;
 }

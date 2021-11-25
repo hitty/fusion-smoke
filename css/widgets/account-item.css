@@ -54,15 +54,56 @@
 .woocommerce-MyAccount-navigation-link > a {
     color: var(--black) !important;
 }
-.woocommerce-Address-title{position: relative;}
+
+.woocommerce-Address-title {
+    position: relative;
+}
+
 .woocommerce-Address-title .edit,
-.woocommerce-Address-title .add
-{position: absolute;top: 11px;right: 0;}
-.woocommerce-Address address{
+.woocommerce-Address-title .add {
+    position: absolute;
+    top: 11px;
+    right: 0;
+}
+
+.my-account .woocommerce-account,
+.my-account .woocommerce-Address{
+    width: 50%;
+}
+.my-account a{
+    color: var(--mint);
+}
+.woocommerce-account .account-card,
+.woocommerce-Address address {
     background: #FFFFFF;
     border: 2px solid #E8F1F8;
     padding: 24px;
     border-radius: 12px;
     font-style: normal;
     font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+}
+.account-card-image{
+    border-radius: 100%;
+    margin-right: 16px;
+}
+.account-card-image img{
+    border-radius: 100%;
+}
+.my-account h2 {
+    color: #000000;
+}
+
+.my-account .woocommerce-order-overview.order_details {
+    margin: 0 16px 0 0;
+}
+.col-border{
+    border: none!important;
+}
+.cust-avatar-delete a{
+    color: red;
+    text-align: left;
+    display: block;
+    margin-top: 8px;
 }

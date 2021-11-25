@@ -1,7 +1,9 @@
 .off-canvas-right .mfp-content, .off-canvas-left .mfp-content {
 
 }
-
+#shop-sidebar {
+    padding-bottom: 60px;
+}
 @media (max-width: 991px) {
     .off-canvas-right .mfp-content, .off-canvas-left .mfp-content {
         width: 100%;

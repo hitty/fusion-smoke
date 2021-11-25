@@ -13,6 +13,7 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
     transition: .3s all ease-in-out;
     background: transparent;
     display: inline-block;
+    margin: 0;
 }
 
 .btn:hover {
@@ -78,7 +79,9 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
 }
 .btn-filled,
 .button.checkout-button,
-#place_order{
+#place_order,
+.woocommerce-Button,
+input[type=submit]{
     color: var(--black)!important;
     border: 2px solid var(--mint)!important;
     background: var(--mint)!important;
@@ -87,6 +90,8 @@ input[type=submit], input[type=submit].button, input[type=submit], .primary, .pr
 .woocommerce-button:hover,
 .cart .single_add_to_cart_button:hover,
 .btn-filled:hover,
+input[type=submit]:hover,
+.woocommerce-Button:hover,
 .product .add_to_cart_button:hover,
 .button.checkout-button:hover,
 #place_order:hover{

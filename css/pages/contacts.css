@@ -20,7 +20,7 @@
     font-weight: bold;
 }
 .contacts-social-icon{
-    margin-right: 16px;
+    margin-left: 16px;
 }
 .contacts-social-icon circle, .contacts-social-icon rect{
     transition: .3s ease-in-out all;

@@ -1,8 +1,22 @@
+<?php
+$category = get_queried_object();
+$is_catering = (!empty($category->parent) && $category->parent == 162 ) || (!empty($category->term_id) && $category->term_id == 162 );
+?>
 <div class="row category-page-row">
-
 		<div class="col large-3 hide-for-medium <?php flatsome_sidebar_classes(); ?>">
 			<?php flatsome_sticky_column_open( 'category_sticky_sidebar' ); ?>
-			<div id="shop-sidebar" class="sidebar-inner col-inner">
+			<div id="shop-sidebar" class="sidebar-inner col-inner <?php if( $is_catering ) echo 'catering'; ?>">
+                <?php if( !empty( $is_catering ) ) { ?>
+                <aside class="widget woocommerce widget_product_categories catering_categories">
+                    <ul class="product-categories">
+                        <li class="cat-item cat-parent has-child" aria-expanded="false">
+                            <a href="/shop/">Shop
+                            <i class="icon-angle-down" style="float: right;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+                <?php } ?>
 				<?php
 				  if(is_active_sidebar('shop-sidebar')) {
 				  		dynamic_sidebar('shop-sidebar');

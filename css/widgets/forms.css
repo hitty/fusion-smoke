@@ -130,6 +130,15 @@ form .woocommerce-Input,
 }
 .form-light .form-control{
     margin-bottom: 24px;
+    color: var(--text-color);
+}
+
+.form-light input.form-control:focus,
+.form-light input.form-control:active,
+.form-light textarea.form-control:focus,
+.form-light textarea.form-control:active{
+    background: transparent;
+    color: var(--text-color);
 }
 .woocommerce form legend{
     text-transform: none;
@@ -168,4 +177,12 @@ form .woocommerce-Input,
 .woocommerce-form__label.woocommerce-form__label-for-checkbox{
     display: flex;
     align-items: center;
+}
+.woocommerce-checkout{
+    margin-top: 60px;
+}
+@media(max-width: 992px){
+    .woocommerce-checkout{
+        margin-top: 40px;
+    }
 }
