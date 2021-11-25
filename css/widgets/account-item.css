@@ -107,3 +107,12 @@
     display: block;
     margin-top: 8px;
 }
+.woocommerce-empty-results{
+    text-align: center;
+    color: #747A8E;
+    padding: 40px 0;
+    display: block!important;
+}
+.woocommerce-empty-results a{
+    display: block;
+}

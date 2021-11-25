@@ -55,7 +55,7 @@ $col    = 1;
 		$oldcol  = $oldcol * -1;
 	?>
 
-	<div class="u-column<?php echo $col < 0 ? 1 : 2; ?> col-<?php echo $oldcol < 0 ? 1 : 2; ?> woocommerce-Address">
+	<div class="u-column<?php echo $col < 0 ? 1 : 2; ?> col-<?php echo $oldcol < 0 ? 1 : 2; ?>">
 		<header class="woocommerce-Address-title title">
 			<h3><?php echo esc_html( 'Address' ); ?></h3>
 			<a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', $name ) ); ?>" class="edit">
@@ -66,9 +66,10 @@ $col    = 1;
 
             </a>
 		</header>
-		<address>
-			<?php
-            echo $address ? wp_kses_post( $address ) : 'No adresses yet.<br><a href="/my-account/edit-address/">Add adress</a>';
+        <address class="<?php if(empty($address)){ ?> woocommerce-empty-results <?php ;} ?>">
+
+        <?php
+            echo $address ? wp_kses_post( $address ) : 'No adresses yet.<a href="/my-account/edit-address/">Add adress</a>';
 			?>
 		</address>
 	</div>

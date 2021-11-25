@@ -63,7 +63,7 @@ require_once dirname( __FILE__ ) . '/my-orders.php';
 		$oldcol  = $oldcol * -1;
 		?>
 
-		<div class="u-column2 col-2 woocommerce-Address <?php if(empty(!$address)){ ?> woocommerce-empty-results <?php ;} ?>">
+		<div class="u-column2 col-2 woocommerce-Address ">
 			<header class="woocommerce-Address-title title">
 				<h3><?php echo esc_html( 'Address' ); ?></h3>
 				<a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', $name ) ); ?>" class="edit">
@@ -74,9 +74,9 @@ require_once dirname( __FILE__ ) . '/my-orders.php';
 
 				</a>
 			</header>
-			<address>
+			<address class="<?php if(empty($address)){ ?> woocommerce-empty-results <?php ;} ?>">
 				<?php
-				echo $address ? wp_kses_post( $address ) : 'No adresses yet.<br><a href="/my-account/edit-address/">Add adress</a>';
+				echo $address ? wp_kses_post( $address ) : "No adresses yet.<a href='/my-account/edit-address/'>Add adress</a>";
 				?>
 			</address>
 		</div>

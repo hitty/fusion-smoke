@@ -31,10 +31,11 @@ $customer_orders = get_posts(
 		)
 	)
 );
-
+?>
+	<h3><?php echo apply_filters( 'woocommerce_my_account_my_orders_title', esc_html__( 'Recent orders', 'woocommerce' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h3>
+<?php
 if ( $customer_orders ) : ?>
 
-	<h3><?php echo apply_filters( 'woocommerce_my_account_my_orders_title', esc_html__( 'Recent orders', 'woocommerce' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h3>
     <?php
     foreach ( $customer_orders as $customer_order ) :
         $order      = wc_get_order( $customer_order ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
@@ -55,4 +56,10 @@ if ( $customer_orders ) : ?>
 
         ?>
     <?php endforeach; ?>
+<?php else : ?>
+	<div class="woocommerce-message woocommerce-message--info woocommerce-Message woocommerce-Message--info woocommerce-info woocommerce-empty-results">
+        <div>You have no orders yet. Go to the Shop and order something :)</div>
+
+		<a class="woocommerce-Button button" style="display: inline-block" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>"><?php esc_html_e( 'Shop', 'woocommerce' ); ?></a>
+	</div>
 <?php endif; ?>
