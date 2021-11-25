@@ -116,3 +116,4 @@
 .woocommerce-empty-results a{
     display: block;
 }
+.my-account .woocommerce-MyAccount-content .woocommerce-notices-wrapper .message-container{background: transparent;}
